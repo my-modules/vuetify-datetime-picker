@@ -33,6 +33,7 @@
           </v-tab>
           <v-tab-item key="calendar">
             <v-date-picker
+              :day-format="date => new Date(date).getDate()"
               locale="ja"
               v-model="date"
               v-bind="datePickerProps"
